@@ -2,7 +2,7 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>District 67 Speech Festival 2026 | 在台北遇見世界</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
@@ -30,8 +30,9 @@
 
     /* ── HERO WRAPPER ── */
     .hero-wrapper {
-      height: 100vh;
-      height: 100svh;
+      min-height: 100vh;
+      min-height: 100svh;
+      min-height: max(100svh, 560px);
       display: flex;
       flex-direction: column;
     }
@@ -541,7 +542,7 @@
 
     /* ── HERO RWD ── */
     @media (max-width: 720px) {
-      .hero-wrapper { height: 100svh; }
+      .hero-wrapper { min-height: max(100svh, 560px); }
       .hero { padding-left: 1.2rem; padding-right: 1.2rem; padding-bottom: 4rem; }
       .hero-slide { background-position: center center; }
       .hero-logo { width: 90px; margin-bottom: 1rem; }
